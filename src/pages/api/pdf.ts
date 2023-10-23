@@ -28,7 +28,7 @@ export default async function handler(
 
   const page = await browser.newPage()
   await page.setViewport({ width: 1920, height: 1080 })
-  await page.goto(url)
+  await page.goto('https://mehrdad2003.github.io/testy/1.html')
 
   return res.status(200).send(await page.pdf())
 }
